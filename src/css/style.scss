@@ -123,6 +123,14 @@ p + p {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 8px;
+
+    .header-buttons {
+        justify-content: space-evenly;
+
+        a {
+            margin: 0.5em;
+        }
+    }
 }
 
 .logo {
@@ -340,6 +348,7 @@ p + p {
     -ms-flex-pack: center;
     justify-content: center;
     margin: 24px 0 16px 0;
+
     & a {
         margin-right: 1em;
     }
@@ -879,6 +888,7 @@ blockquote {
     padding: 0.5em 10px;
     quotes: "\201C""\201D""\2018""\2019";
 }
+
 blockquote:before {
     color: #ccc;
     content: open-quote;
@@ -887,6 +897,7 @@ blockquote:before {
     margin-right: 0.25em;
     vertical-align: -0.4em;
 }
+
 blockquote p {
     display: inline;
 }

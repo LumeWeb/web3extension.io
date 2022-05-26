@@ -6,9 +6,14 @@ import {StaticImage} from "gatsby-plugin-image";
 const Header = () => (
     <div className="header">
         <Link to={"/"}><StaticImage src={"../images/logo.png"} alt={"Lume Web"} className={"logo"}/> </Link>
-        <Link to={"/donate"}>
-            <button className="donate-btn">Donate</button>
-        </Link>
+        <div className={"header-buttons"}>
+            <Link to={"/donate"}>
+                <button className="donate-btn">Donate</button>
+            </Link>
+            <a href="https://discord.gg/3fe4KZhZ9y" target="_blank">
+                <button className="donate-btn">Discord</button>
+            </a>
+        </div>
     </div>
 )
 
