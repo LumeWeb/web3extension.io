@@ -25,7 +25,7 @@ export default function Layout({children}) {
                             {children}
                             <section className="section-footer">
                                 <div className="footer-divider">
-                                    <a href="https://lumeweb.com"><StaticImage src={"../images/icon.png"}
+                                    <a href="https://lumeweb.com"><StaticImage src={"../images/icon-footer.png"}
                                                                                className="logo"
                                                                                alt="Lume Web"/></a>
                                 </div>
