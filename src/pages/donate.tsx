@@ -5,7 +5,7 @@ import {StaticImage} from "gatsby-plugin-image";
 const DonatePage = () => {
   return  <Layout>
         <section className="section-donate">
-            <h1>Support Lume Web, help us an open, decentralized web for humanity</h1>
+            <h1>Support Lume Web, help us build an open, decentralized web for humanity</h1>
             <div className="download">
                 <div className="download-button">
                     <a href="https://lumeweb.com/donate" target="_blank">
