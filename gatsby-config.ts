@@ -32,6 +32,17 @@ const config: GatsbyConfig = {
                     families: ['Roboto']
                 }
             }
+        },
+        {
+            resolve: 'gatsby-plugin-matomo',
+            options: {
+                siteId: '2',
+                matomoUrl: 'https://piwiki.lumeweb.com',
+                siteUrl: 'https://web3extension.com',
+                enableJSErrorTracking: true,
+                exclude: ['/offline-plugin-app-shell-fallback/'],
+                cookieDomain: '*.web3extension.com',
+            }
         }
     ],
 
