@@ -66,6 +66,12 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    color: $dark;
+    text-align: center;
+    line-height: 1;
+}
+
 @media only screen and (max-width: 480px) {
     h2 {
         font-size: 22px;
@@ -413,6 +419,25 @@ p + p {
 
     .os-options span {
         margin: 2px 0 0 0;
+    }
+}
+
+.section-share {
+    margin-top: 24px;
+
+    p {
+        margin-bottom: 1em;
+    }
+
+    .addthis_inline_share_toolbox {
+        text-align: center;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .section-share {
+        margin-top: 10px;
     }
 }
 

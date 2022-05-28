@@ -33,6 +33,7 @@ const SEO = ({title, desc, banner, pathname}) => {
                 <html lang={siteLanguage}/>
                 <meta name="description" content={seo.description}/>
                 <meta name="image" content={seo.image}/>
+                <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6291a28498423e20"></script>
             </Helmet>
             <Facebook
                 desc={seo.description}

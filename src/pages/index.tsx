@@ -30,6 +30,13 @@ const IndexPage = () => {
                 </div>
             </div>
         </section>
+        <section className="section-share">
+            <h3>Share</h3>
+            <div>
+                <p>Outside upgrading to web3, or supporting with $ if you can, the best way to support this initiative is by sharing and blue pilling your social network, friends and family. If orange is for bitcoin, then blue must represent web3, and both represent 2 sides of a bitcoin for freedom!</p>
+                <div className="addthis_inline_share_toolbox" />
+            </div>
+        </section>
 
         <section className="section-advantages">
             <div className="advantage-card">
