@@ -10,6 +10,9 @@ const Header = () => (
             <Link to={"/donate"}>
                 <button className="donate-btn">Donate</button>
             </Link>
+            <a href="https://lumeweb.com/vision" target="_blank">
+                <button className="donate-btn">Project Vision</button>
+            </a>
             <a href="https://discord.gg/3fe4KZhZ9y" target="_blank">
                 <button className="donate-btn">Discord</button>
             </a>
