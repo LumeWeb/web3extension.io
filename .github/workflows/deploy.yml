@@ -25,7 +25,7 @@ jobs:
               with:
                   upload-dir: public
                   github-token: ${{ secrets.GITHUB_TOKEN }}
-                  portal-url: https://fileportal.org
+                  portal-url: https://web3portal.com
                   skynet-api-key: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' && secrets.SKYNET_API_KEY || '' }}
                   registry-seed: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' && secrets.REGISTRY_SEED || '' }}
                   registry-datakey: web3extension.com
