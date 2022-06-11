@@ -18,7 +18,7 @@ const IndexPage = () => {
 
         <section className="section-download">
             <div>
-                <h2>Download the Web Extension by Lume Web</h2>
+                <h2>Download the Web3 Extension by Lume Web</h2>
             </div>
             <div className="download">
                 <div className="download-button">
