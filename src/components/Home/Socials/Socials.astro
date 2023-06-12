@@ -1,0 +1,25 @@
+---
+import './Socials.scss';
+
+import svgGithub from '/src/assets/github.svg?raw';
+import svgDiscord from '/src/assets/discord.svg?raw';
+import svgTwitter from '/src/assets/twitter.svg?raw';
+import svgFacebook from '/src/assets/facebook.svg?raw';
+---
+
+<section id="socials">
+  <div>
+    <a href="#" title="GitHub" class="github-logo">
+      <Fragment set:html={svgGithub} />
+    </a>
+    <a href="#" title="Discord" class="discord-logo">
+      <Fragment set:html={svgDiscord} />
+    </a>
+    <a href="#" title="Twitter" class="twitter-logo">
+      <Fragment set:html={svgTwitter} />
+    </a>
+    <a href="#" title="Facebook" class="facebook-logo">
+      <Fragment set:html={svgFacebook} />
+    </a>
+  </div>
+</section>

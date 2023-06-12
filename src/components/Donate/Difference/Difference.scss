@@ -1,0 +1,64 @@
+@import "/src/styles/mixins.scss";
+@import "/src/styles/vars.scss";
+
+#difference {
+  padding: 12em 7.5% 7em;
+  max-width: 192em;
+  margin: 0 auto;
+
+  &::before {
+    bottom: -12%;
+  }
+
+  > div {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 34em;
+    margin: 0 auto;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: min(0em, calc((100% - 68.9em) / 2));
+      width: calc(100% - 72em - 7.5%);
+      min-width: calc(68.9em);
+      background-image: url("/src/assets/difference-bg.png");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: -1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: min(0em, calc((100% - 68.9em) / 2));
+      width: calc(100% - 72em - 7.5%);
+      min-width: calc(68.9em);
+      background: radial-gradient(50% 50% at 50% 50%, rgba($color-blue-charcoal, 0) 48.31%, $color-blue-charcoal 100%);
+      z-index: -1;
+    }
+
+    .feature-group {
+      margin: 2em 0;
+      max-width: 72em;
+
+      h3 {
+        font-weight: 400;
+      }
+
+      p {
+        padding: 0.3em 0.5em;
+        margin: -0.3em -0.5em;
+        background: rgba($color-blue-charcoal-2, 0.8);
+        border-radius: 0.5em;
+      }
+    }
+  }
+}

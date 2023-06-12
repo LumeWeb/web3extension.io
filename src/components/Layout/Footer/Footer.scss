@@ -1,0 +1,112 @@
+@import "/src/styles/mixins.scss";
+@import "/src/styles/vars.scss";
+
+footer {
+  display: flex;
+  padding: 7em 7.5% 8em;
+  font-family: $font-family-jaldi;
+  @include fluid-font-size(0.625rem);
+  background: $color-blue-charcoal;
+
+  > div {
+    display: flex;
+    align-items: center;
+    @include fluid-font-size(1.375rem);
+
+    &:first-child {
+      flex-grow: 1;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &:last-child {
+      flex-grow: 1;
+      justify-content: flex-end;
+      text-align: right;
+    }
+  }
+
+  .logo {
+    a {
+      display: inline-block;
+    }
+
+    img {
+      @include fluid-width(8.4375rem);
+    }
+  }
+
+  .contact {
+    margin-top: 0.25em;
+    color: $color-cloud;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+
+      &:hover {
+        color: $color-white;
+      }
+    }
+
+    svg {
+      @include fluid-width-height(1.375rem, 1.375rem);
+      margin-right: 0.5em;
+    }
+  }
+
+  .gateway-icon img {
+    @include fluid-width-height(5rem, 5rem);
+  }
+
+  .phrase {
+    width: 7em;
+    font-family: $font-family-jetbrains-mono;
+    font-weight: 700;
+    line-height: 140%;
+    color: $color-brand;
+  }
+}
+
+@media screen and (max-width: 47.99999rem) {
+  footer {
+    flex-direction: column;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+
+    > div {
+      justify-content: center;
+      font-size: 1.25rem;
+    }
+
+    > div:first-child {
+      align-items: center;
+      margin-top: 4rem;
+      order: 2;
+    }
+
+    > div:last-child {
+      justify-content: center;
+      margin-top: 1.25rem;
+      order: 3;
+    }
+
+    img {
+      width: 8.4375rem;
+    }
+
+    .contact {
+      margin-top: 1.25rem;
+    }
+
+    .gateway-icon img {
+      @include fluid-width-height(2.75rem, 2.75rem);
+    }
+
+    .phrase {
+      width: auto;
+      text-align: center;
+    }
+  }
+}

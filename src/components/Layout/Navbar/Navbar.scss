@@ -1,0 +1,113 @@
+@import "/src/styles/mixins.scss";
+@import "/src/styles/vars.scss";
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 3.75%;
+  @include fluid-font-size(1.25rem);
+  white-space: nowrap;
+
+  .logo {
+    flex-shrink: 0;
+
+    img {
+      @include fluid-width-height(13.125rem, 4.375rem);
+    }
+  }
+}
+
+menu {
+  display: flex;
+  align-items: center;
+
+  a {
+    display: block;
+    padding: 0.55em 0.9em;
+    @include fluid-font-size(1.375rem);
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: text-decoration-color $transition-duration;
+
+    &.current, &:hover, &:active {
+      text-decoration-color: inherit;
+    }
+  }
+
+  .lume {
+    display: flex;
+    align-items: center;
+    gap: 0.25em;
+    color: $color-brand;
+  }
+
+  svg {
+    @include fluid-width-height(1.5rem, 1.5rem);
+  }
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1;
+  margin: 0 3.75% 0 2rem;
+}
+
+@media screen and (max-width: 47.9999rem) {
+  nav {
+    position: sticky;
+    top: 0;
+    background: rgba($color-blue-charcoal-2, 0.8);
+    z-index: 2;
+  }
+
+  menu {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: min(-20rem, -100vw);
+    bottom: 0;
+    padding: 7.5em 7.5% 1em;
+    background: rgba($color-blue-charcoal-2, 0.8);
+    transition: right $transition-duration;
+    overflow-y: auto;
+
+    &.active {
+      right: 0;
+
+      &::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: $color-black;
+        animation: $transition-duration bg-opacity forwards;
+        z-index: -1;
+      }
+    }
+
+    a {
+      font-size: 1.25rem;
+      margin: 0 2.2em 0 1em;
+      padding: inherit 0.8em;
+    }
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@keyframes bg-opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,23 @@
+@import "/src/styles/mixins.scss";
+@import "/src/styles/vars.scss";
+
+#how-to-support {
+  padding: 5em 7.5%;
+  background: $color-brand;
+  color: $color-blue-charcoal-2;
+
+  h2 {
+    margin-bottom: 0.25em;
+    @include fluid-font-size(2rem);
+    font-weight: 700;
+    line-height: 153%;
+    text-transform: none;
+    color: inherit;
+  }
+
+  p {
+    font-family: $font-family-jaldi;
+    @include fluid-font-size(1.5rem);
+    line-height: 165%;
+  }
+}
