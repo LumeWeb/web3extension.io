@@ -1,0 +1,88 @@
+@import "/src/styles/vars.scss";
+
+#access {
+  position: relative;
+  padding: 10em 0;
+  z-index: -1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -47.5em;
+    left: 0;
+    width: 52.11em;
+    height: 117.1em;
+    background-image: url("/src/assets/home-left-bg.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  > div {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 152em;
+    min-height: 45.2em;
+    margin: 0 auto;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: min(0em, calc((100% - 45.2em) / 2));
+      width: calc(100% - 80em - 7.5%);
+      min-width: 45.2em;
+      background-image: url("/src/assets/access-bg.png");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      animation: spin 7s infinite linear;
+      z-index: -1;
+    }
+
+    .feature-group {
+      box-sizing: content-box;
+      margin: 2em 7.5%;
+      max-width: 80em;
+
+      p {
+        padding: 0.3em 0.5em;
+        margin: -0.3em -0.5em;
+        background: rgba($color-black, 0.8);
+        border-radius: 0.5em;
+      }
+    }
+  }
+
+  @media screen and (max-width: 56rem) {
+    &::after {
+      top: -56em;
+      height: 78em;
+    }
+
+    > div {
+      &::before {
+        top: 0;
+        bottom: auto;
+        left: calc((100% - 45.2em) / 2);
+        width: 45.2em;
+        height: 45.2em;
+      }
+
+      .feature-group {
+        margin-top: 52.2em;
+        max-width: none;
+      }
+    }
+  }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(359deg);
+    }
+}

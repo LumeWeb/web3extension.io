@@ -1,0 +1,79 @@
+@import "/src/styles/mixins.scss";
+@import "/src/styles/vars.scss";
+
+#why {
+  padding: 8em 7.5% 7em;
+  max-width: 192em;
+  margin: 0 auto;
+
+  > div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 42em;
+    margin: 0 auto;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: min(0em, calc((100% - 56em) / 2));
+      width: calc(100% - 72em - 7.5%);
+      min-width: calc(56em);
+      background-image: url("/src/assets/astronaut.png");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: -1;
+    }
+  }
+
+  .socials {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin: 4em -0.5em -0.5em;
+
+    a {
+      padding: 0.5em;
+      color: $color-alto;
+
+      &:hover {
+        color: $color-brand;
+      }
+    }
+
+    .github-logo svg {
+      @include fluid-width(2.75rem);
+    }
+
+    .discord-logo svg {
+      @include fluid-width(2.75rem);
+    }
+
+    .twitter-logo svg {
+      @include fluid-width(2.75rem);
+    }
+
+    .facebook-logo svg {
+      @include fluid-width(2.75rem);
+    }
+  }
+
+  .feature-group {
+    margin: 2em 0;
+    max-width: 72em;
+
+    h3 {
+      font-weight: 400;
+    }
+
+    p {
+      padding: 0.3em 0.5em;
+      margin: -0.3em -0.5em;
+      background: rgba($color-blue-charcoal-2, 0.8);
+      border-radius: 0.5em;
+    }
+  }
+}

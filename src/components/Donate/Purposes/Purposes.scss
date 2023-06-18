@@ -1,0 +1,18 @@
+@import "/src/styles/mixins.scss";
+@import "/src/styles/vars.scss";
+
+#purposes {
+  background: $color-black;
+
+  .purpose-development img {
+    @include fluid-width(3.4375rem);
+  }
+
+  .purpose-pioneering img {
+    @include fluid-width(3.4375rem);
+  }
+
+  .purpose-growth img {
+    @include fluid-width(3.4375rem);
+  }
+}

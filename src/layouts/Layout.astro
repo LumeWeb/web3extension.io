@@ -1,0 +1,26 @@
+---
+import '../styles/global.scss';
+import Navbar from '../components/Layout/Navbar/Navbar.jsx';
+import Footer from '../components/Layout/Footer/Footer.astro';
+
+export interface Props {
+  view: string;
+  title: string;
+}
+
+const { view, title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{title}</title>
+  </head>
+  <body>
+    <Navbar view={view} client:load />
+    <main class={view}>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

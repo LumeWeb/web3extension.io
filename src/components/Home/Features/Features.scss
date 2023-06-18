@@ -1,0 +1,15 @@
+@import "/src/styles/mixins.scss";
+
+#features {
+  .feature-private img {
+    @include fluid-width(3.4375rem);
+  }
+
+  .feature-personal img {
+    @include fluid-width(3.4375rem);
+  }
+
+  .feature-gateway img {
+    @include fluid-width(3.4375rem);
+  }
+}

@@ -1,0 +1,46 @@
+@import "/src/styles/mixins.scss";
+@import "/src/styles/vars.scss";
+
+#socials {
+  display: none;
+  padding: 12em 7.5% 0;
+  @include fluid-font-size(0.625rem);
+  background: $color-blue-charcoal;
+
+  @media screen and (max-width: 47.99999rem) {
+    display: block;
+  }
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    margin: -0.5em;
+
+    a {
+      padding: 0.5em;
+      color: $color-alto;
+
+      &:hover {
+        color: $color-brand;
+      }
+    }
+
+    .github-logo svg {
+      @include fluid-width(3.5rem);
+    }
+
+    .discord-logo svg {
+      @include fluid-width(3.5rem);
+    }
+
+    .twitter-logo svg {
+      @include fluid-width(3.5rem);
+    }
+
+    .facebook-logo svg {
+      @include fluid-width(3.5rem);
+    }
+  }
+}

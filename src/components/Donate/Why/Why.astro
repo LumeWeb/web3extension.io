@@ -1,0 +1,38 @@
+---
+import './Why.scss';
+
+import svgGithub from '/src/assets/github.svg?raw';
+import svgDiscord from '/src/assets/discord.svg?raw';
+import svgTwitter from '/src/assets/twitter.svg?raw';
+import svgFacebook from '/src/assets/facebook.svg?raw';
+---
+
+<section id="why">
+  <div>
+    <div class="feature-group">
+      <h2>
+        Powered by you
+      </h2>
+      <h3>
+        Why we ask for your donations
+      </h3>
+      <p>
+        Lume Web is a small initiative with big ideas and a unique vision. We rely on the community and crypto whales to support us in building technology that empowers internet users. The current internet is controlled by a few, turning users into products in exchange for "free" services, making us batteries in the matrix.
+      </p>
+      <div class="socials">
+        <a href="#" title="GitHub" class="github-logo">
+          <Fragment set:html={svgGithub} />
+        </a>
+        <a href="#" title="Discord" class="discord-logo">
+          <Fragment set:html={svgDiscord} />
+        </a>
+        <a href="#" title="Twitter" class="twitter-logo">
+          <Fragment set:html={svgTwitter} />
+        </a>
+        <a href="#" title="Facebook" class="facebook-logo">
+          <Fragment set:html={svgFacebook} />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

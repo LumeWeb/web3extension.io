@@ -1,0 +1,191 @@
+@import "/src/styles/mixins.scss";
+@import "/src/styles/vars.scss";
+
+#install {
+  padding: 7em 7.5% 12.5em;
+
+  > div:first-child {
+    max-width: 120em;
+  }
+
+  h1 {
+    margin-left: -0.1em;
+    @include fluid-font-size-s(5.6875rem);
+    font-weight: 300;
+    line-height: 122%;
+    letter-spacing: -0.06em;
+
+    .larger {
+      @include fluid-font-size-s(6.8125rem);
+      font-weight: 400;
+    }
+
+    .highlight {
+      color: $color-brand;
+    }
+  }
+
+  p {
+    margin: 0.8em 0 1.6em;
+    padding-right: 2.5em;
+    font-family: $font-family-jaldi;
+    @include fluid-font-size(2.4375rem);
+    line-height: 108%;
+    color: rgba($color-white, 0.5);
+
+    .highlight {
+      color: $color-white;
+    }
+  }
+
+  .install {
+    display: flex;
+    align-items: center;
+    gap: 5em;
+
+    .btn-main {
+      padding: 1.2em 2em;
+    }
+
+    .powered-by {
+      display: flex;
+      align-items: center;
+      gap: 2.5em;
+
+      a {
+        color: #4e5b5d;
+
+        &:hover {
+          color: $color-white;
+        }
+      }
+
+      .sia-logo svg {
+        @include fluid-width(3.75rem);
+      }
+
+      .hns-logo svg {
+        @include fluid-width(2.75rem);
+      }
+
+      .osi-logo svg {
+        @include fluid-width(2.75rem);
+      }
+    }
+  }
+
+  .resources {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5.5em;
+    margin-top: 5em;
+
+    .links {
+      font-family: $font-family-jaldi;
+      @include fluid-font-size(1.5rem);
+
+      a {
+        color: rgba(169, 169, 169, 0.5);
+
+        &:hover {
+          color: $color-white;
+        }
+      }
+    }
+
+    .socials {
+      display: flex;
+      align-items: center;
+      gap: 2em;
+      margin: -0.5em;
+
+      a {
+        padding: 0.5em;
+        color: $color-alto;
+
+        &:hover {
+          color: $color-brand;
+        }
+      }
+
+      .github-logo svg {
+        @include fluid-width(2.75rem);
+      }
+
+      .discord-logo svg {
+        @include fluid-width(2.75rem);
+      }
+
+      .twitter-logo svg {
+        @include fluid-width(2.75rem);
+      }
+
+      .facebook-logo svg {
+        @include fluid-width(2.75rem);
+      }
+    }
+  }
+
+  @media screen and (max-width: 67rem) {
+    h1 {
+      font-weight: 400;
+
+      .larger {
+        @include fluid-font-size-s(5.6875rem);
+      }
+    }
+
+    p {
+      padding: 0;
+    }
+  }
+
+  @media screen and (max-width: 56rem) {
+    padding-top: 14em;
+    padding-bottom: 10em;
+
+    h1 {
+      line-height: 155%;
+    }
+
+    p {
+      line-height: 145%;
+    }
+  }
+
+  @media screen and (max-width: 47.99999rem) {
+    .install {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 7.5em;
+
+      .btn-main {
+        padding: 1.2em 1.6em;
+        letter-spacing: -0.01em;
+      }
+
+      .powered-by {
+        gap: 4em;
+
+        .sia-logo svg {
+          @include fluid-width(6.75rem);
+        }
+
+        .hns-logo svg {
+          @include fluid-width(4.95rem);
+        }
+
+        .osi-logo svg {
+          @include fluid-width(4.95rem);
+        }
+      }
+    }
+
+    .resources {
+      .socials {
+        display: none;
+      }
+    }
+  }
+}
