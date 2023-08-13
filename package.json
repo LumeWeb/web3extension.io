@@ -1,8 +1,12 @@
 {
-    "name": "lume-web3extension",
+    "name": "@lumeweb/web3extension.io",
     "type": "module",
     "version": "0.0.1",
     "private": true,
+    "repository": {
+        "type": "git",
+        "url": "gitea@git.lumeweb.com:LumeWeb/web3extension.io.git"
+    },
     "scripts": {
         "dev": "TAILWIND_MODE=watch astro dev",
         "start": "astro dev",

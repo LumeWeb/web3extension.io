@@ -1,11 +1,11 @@
 {
-    "name": "lume-web3extension",
+    "name": "@lumeweb/web3extension.io",
     "version": "0.0.1",
     "lockfileVersion": 3,
     "requires": true,
     "packages": {
         "": {
-            "name": "lume-web3extension",
+            "name": "@lumeweb/web3extension.io",
             "version": "0.0.1",
             "dependencies": {
                 "@astrojs/image": "^0.16.6",
