@@ -1,3 +1,10 @@
+## [0.1.1-develop.3](https://git.lumeweb.com/LumeWeb/web3extension.io/compare/v0.1.1-develop.2...v0.1.1-develop.3) (2023-08-13)
+
+
+### Bug Fixes
+
+* update how images are referenced, import them ([b706737](https://git.lumeweb.com/LumeWeb/web3extension.io/commit/b7067374fcf365a83167e804edbc5cd876863505))
+
 ## [0.1.1-develop.2](https://git.lumeweb.com/LumeWeb/web3extension.io/compare/v0.1.1-develop.1...v0.1.1-develop.2) (2023-08-13)
 
 

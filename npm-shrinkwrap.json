@@ -1,12 +1,12 @@
 {
     "name": "@lumeweb/web3extension.io",
-    "version": "0.1.1-develop.2",
+    "version": "0.1.1-develop.3",
     "lockfileVersion": 3,
     "requires": true,
     "packages": {
         "": {
             "name": "@lumeweb/web3extension.io",
-            "version": "0.1.1-develop.2",
+            "version": "0.1.1-develop.3",
             "dependencies": {
                 "@astrojs/image": "^0.16.6",
                 "@astrojs/react": "^2.1.1",
