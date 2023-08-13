@@ -1,3 +1,10 @@
+## [0.0.2-develop.3](https://git.lumeweb.com/LumeWeb/web3extension.io/compare/v0.0.2-develop.2...v0.0.2-develop.3) (2023-08-13)
+
+
+### Bug Fixes
+
+* git link needs to point to repo ([9735aed](https://git.lumeweb.com/LumeWeb/web3extension.io/commit/9735aedd0cea8627fbf0a5790fda5cd2f7f0371a))
+
 ## [0.0.2-develop.2](https://git.lumeweb.com/LumeWeb/web3extension.io/compare/v0.0.2-develop.1...v0.0.2-develop.2) (2023-08-13)
 
 
