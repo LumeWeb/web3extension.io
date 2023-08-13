@@ -1,7 +1,7 @@
 {
     "name": "@lumeweb/web3extension.io",
     "type": "module",
-    "version": "0.1.0",
+    "version": "0.1.1-develop.1",
     "private": true,
     "repository": {
         "type": "git",
