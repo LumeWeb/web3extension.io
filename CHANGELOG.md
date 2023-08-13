@@ -1,3 +1,10 @@
+## [0.1.1](https://git.lumeweb.com/LumeWeb/web3extension.io/compare/v0.1.0...v0.1.1) (2023-08-13)
+
+
+### Bug Fixes
+
+* updates titles ([054464a](https://git.lumeweb.com/LumeWeb/web3extension.io/commit/054464a9c5eff0b0facc7b1b68ae41e9aee4ddee))
+
 # [0.1.0](https://git.lumeweb.com/LumeWeb/web3extension.io/compare/v0.0.2...v0.1.0) (2023-08-13)
 
 
