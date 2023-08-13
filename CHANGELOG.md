@@ -1,3 +1,10 @@
+## [0.0.2-develop.4](https://git.lumeweb.com/LumeWeb/web3extension.io/compare/v0.0.2-develop.3...v0.0.2-develop.4) (2023-08-13)
+
+
+### Bug Fixes
+
+* set url of extension download page ([d4476e0](https://git.lumeweb.com/LumeWeb/web3extension.io/commit/d4476e0fb3acb278c7b6e44ff2d2b2e8843df62b))
+
 ## [0.0.2-develop.3](https://git.lumeweb.com/LumeWeb/web3extension.io/compare/v0.0.2-develop.2...v0.0.2-develop.3) (2023-08-13)
 
 
