@@ -1,11 +1,14 @@
 ---
+import privateImg from  "/src/assets/icon-private.png";
+import personalImg from  "/src/assets/icon-personal.png";
+import gatewayImg from  "/src/assets/icon-gateway.png";
 import './Features.scss';
 ---
 
 <section id="features" class="feature-grid">
   <div class="feature-private">
     <div>
-      <img src="/src/assets/icon-private.png" />
+      <img src={privateImg.src} />
     </div>
     <div class="feature-group">
       <h2>
@@ -21,7 +24,7 @@ import './Features.scss';
   </div>
   <div class="feature-personal">
     <div>
-      <img src="/src/assets/icon-personal.png" />
+      <img src={personalImg.src} />
     </div>
     <div class="feature-group">
       <h2>
@@ -37,7 +40,7 @@ import './Features.scss';
   </div>
   <div class="feature-gateway">
     <div>
-      <img src="/src/assets/icon-gateway.png" />
+      <img src={gatewayImg.src} />
     </div>
     <div class="feature-group">
       <h2>
