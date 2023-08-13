@@ -8,57 +8,54 @@ import svgOsi from '/src/assets/osi.svg?raw';
 import svgGithub from '/src/assets/github.svg?raw';
 import svgDiscord from '/src/assets/discord.svg?raw';
 import svgTwitter from '/src/assets/twitter.svg?raw';
-import svgFacebook from '/src/assets/facebook.svg?raw';
 ---
 
 <section id="install">
-  <div>
-    <h1>
-      Introducing the private <span class="larger">gateway to <span class="highlight">Web3.</span></span>
-    </h1>
-    <p>
-      Gain freedom on a new web, owned by its users, and with <span class="highlight">privacy</span> and <span class="highlight">control</span> built-in.
-    </p>
-    <div class="install">
-      <a href="#" class="btn-main">Install Web3 Extension</a>
-      <div class="powered-by">
-        <a href="https://sia.tech" title="Sia" class="sia-logo">
-          <Fragment set:html={svgSia} />
-        </a>
-        <a href="https://handshake.org" title="Handshake" class="hns-logo">
-          <Fragment set:html={svgHns} />
-        </a>
-        <a href="https://opensource.org/osd/" title="Open Source Initiative" class="osi-logo">
-          <Fragment set:html={svgOsi} />
-        </a>
-      </div>
+    <div>
+        <h1>
+            Introducing the private <span class="larger">gateway to <span class="highlight">Web3.</span></span>
+        </h1>
+        <p>
+            Gain freedom on a new web, owned by its users, and with <span class="highlight">privacy</span> and <span
+            class="highlight">control</span> built-in.
+        </p>
+        <div class="install">
+            <a href="#" class="btn-main">Install Web3 Extension</a>
+            <div class="powered-by">
+                <a href="https://sia.tech" title="Sia" class="sia-logo">
+                    <Fragment set:html={svgSia}/>
+                </a>
+                <a href="https://handshake.org" title="Handshake" class="hns-logo">
+                    <Fragment set:html={svgHns}/>
+                </a>
+                <a href="https://opensource.org/osd/" title="Open Source Initiative" class="osi-logo">
+                    <Fragment set:html={svgOsi}/>
+                </a>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="resources">
-    <ul class="links">
-      <li>
-        <a href="#">View on GitHub</a>
-      </li>
-      <li>
-        <a href="https://lumeweb.com">Learn more about Lume</a>
-      </li>
-      <li>
-        <a href="/donate">Donate</a>
-      </li>
-    </ul>
-    <div class="socials">
-      <a href="#" title="GitHub" class="github-logo">
-        <Fragment set:html={svgGithub} />
-      </a>
-      <a href="#" title="Discord" class="discord-logo">
-        <Fragment set:html={svgDiscord} />
-      </a>
-      <a href="#" title="Twitter" class="twitter-logo">
-        <Fragment set:html={svgTwitter} />
-      </a>
-      <a href="#" title="Facebook" class="facebook-logo">
-        <Fragment set:html={svgFacebook} />
-      </a>
+    <div class="resources">
+        <ul class="links">
+            <li>
+                <a href="https://github.com/LumeWeb">View on GitHub</a>
+            </li>
+            <li>
+                <a href="https://lumeweb.com">Learn more about Lume</a>
+            </li>
+            <li>
+                <a href="/donate">Donate</a>
+            </li>
+        </ul>
+        <div class="socials">
+            <a href="https://github.com/LumeWeb" title="GitHub" class="github-logo">
+                <Fragment set:html={svgGithub}/>
+            </a>
+            <a href="https://discord.gg/qpC8ADp3rS" title="Discord" class="discord-logo">
+                <Fragment set:html={svgDiscord}/>
+            </a>
+            <a href="https://twitter.com/lumeweb3" title="Twitter" class="twitter-logo">
+                <Fragment set:html={svgTwitter}/>
+            </a>
+        </div>
     </div>
-  </div>
 </section>
