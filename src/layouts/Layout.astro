@@ -4,28 +4,47 @@ import Navbar from '../components/Layout/Navbar/Navbar.jsx';
 import Footer from '../components/Layout/Footer/Footer.astro';
 
 export interface Props {
-  view: string;
-  title: string;
+    view: string;
+    title: string;
 }
 
-const { view, title } = Astro.props;
+const {view, title} = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <title>{title}</title>
-      <meta
-          name="description"
-          content="Access the open, user-owned web with Lume Web, and make it yours"
-      />
-      <meta name="keywords" content="Web3 Extension, web3 browser, Lume Web, Web3, dWeb, p2p, handshake, eth, ethereum, ipfs, open web, privacy, decentralization, blockchain" />
-  </head>
-  <body>
-    <Navbar view={view} client:load />
-    <main class={view}>
-      <slot />
-    </main>
-    <Footer />
-  </body>
+    <meta
+        name="description"
+        content="Access the open, user-owned web with Lume Web, and make it yours"
+    />
+    <meta name="keywords"
+          content="Web3 Extension, web3 browser, Lume Web, Web3, dWeb, p2p, handshake, eth, ethereum, ipfs, open web, privacy, decentralization, blockchain"/>
+    <!-- Matomo -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "//piwiki.lumeweb.com/";
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', '2']);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.async = true;
+            g.src = u + 'matomo.js';
+            s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
+
+</head>
+<body>
+<Navbar view={view} client:load/>
+<main class={view}>
+    <slot/>
+</main>
+<Footer/>
+</body>
 </html>
