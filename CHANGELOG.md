@@ -1,3 +1,10 @@
+# [0.1.0](https://git.lumeweb.com/LumeWeb/web3extension.io/compare/v0.0.2...v0.1.0) (2023-08-13)
+
+
+### Features
+
+* add analytics ([b51847d](https://git.lumeweb.com/LumeWeb/web3extension.io/commit/b51847da061ee785d84a0853f7b1a36b066c5bc9))
+
 ## [0.0.2](https://git.lumeweb.com/LumeWeb/web3extension.io/compare/v0.0.1...v0.0.2) (2023-08-13)
 
 
