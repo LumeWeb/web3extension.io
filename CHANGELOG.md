@@ -1,3 +1,10 @@
+## [0.1.1-develop.4](https://git.lumeweb.com/LumeWeb/web3extension.io/compare/v0.1.1-develop.3...v0.1.1-develop.4) (2023-08-14)
+
+
+### Bug Fixes
+
+* wrong donation url ([82c8545](https://git.lumeweb.com/LumeWeb/web3extension.io/commit/82c85455cc98e125e336cbc6a18a539c7e9a2f72))
+
 ## [0.1.1-develop.3](https://git.lumeweb.com/LumeWeb/web3extension.io/compare/v0.1.1-develop.2...v0.1.1-develop.3) (2023-08-13)
 
 
