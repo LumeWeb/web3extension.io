@@ -1,3 +1,15 @@
+# [0.2.0-develop.1](https://git.lumeweb.com/LumeWeb/web3extension.io/compare/v0.1.1-develop.4...v0.2.0-develop.1) (2023-08-19)
+
+
+### Bug Fixes
+
+* add clarification about censorship ([fe8e3af](https://git.lumeweb.com/LumeWeb/web3extension.io/commit/fe8e3af2de27b62e8fc82251105893d59a37b8bb))
+
+
+### Features
+
+* add opengraph ([45bc16b](https://git.lumeweb.com/LumeWeb/web3extension.io/commit/45bc16bc1e14f581b46b342e5f963d57c4da424a))
+
 ## [0.1.1-develop.4](https://git.lumeweb.com/LumeWeb/web3extension.io/compare/v0.1.1-develop.3...v0.1.1-develop.4) (2023-08-14)
 
 
