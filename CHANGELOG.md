@@ -1,3 +1,5 @@
+## [0.2.1-develop.1](https://git.lumeweb.com/LumeWeb/web3extension.io/compare/v0.2.0...v0.2.1-develop.1) (2023-08-19)
+
 # [0.2.0](https://git.lumeweb.com/LumeWeb/web3extension.io/compare/v0.1.2...v0.2.0) (2023-08-19)
 
 
