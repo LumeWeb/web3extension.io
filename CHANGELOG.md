@@ -1,3 +1,10 @@
+# [0.2.0-develop.2](https://git.lumeweb.com/LumeWeb/web3extension.io/compare/v0.2.0-develop.1...v0.2.0-develop.2) (2023-08-19)
+
+
+### Features
+
+* add sitemap ([e54c4c8](https://git.lumeweb.com/LumeWeb/web3extension.io/commit/e54c4c82d78e4f652607e58df6f27f44b5c19406))
+
 # [0.2.0-develop.1](https://git.lumeweb.com/LumeWeb/web3extension.io/compare/v0.1.1-develop.4...v0.2.0-develop.1) (2023-08-19)
 
 
