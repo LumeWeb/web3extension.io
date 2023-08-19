@@ -1,3 +1,17 @@
+# [0.2.0](https://git.lumeweb.com/LumeWeb/web3extension.io/compare/v0.1.2...v0.2.0) (2023-08-19)
+
+
+### Bug Fixes
+
+* add clarification about censorship ([fe8e3af](https://git.lumeweb.com/LumeWeb/web3extension.io/commit/fe8e3af2de27b62e8fc82251105893d59a37b8bb))
+* wrong donation url ([82c8545](https://git.lumeweb.com/LumeWeb/web3extension.io/commit/82c85455cc98e125e336cbc6a18a539c7e9a2f72))
+
+
+### Features
+
+* add opengraph ([45bc16b](https://git.lumeweb.com/LumeWeb/web3extension.io/commit/45bc16bc1e14f581b46b342e5f963d57c4da424a))
+* add sitemap ([e54c4c8](https://git.lumeweb.com/LumeWeb/web3extension.io/commit/e54c4c82d78e4f652607e58df6f27f44b5c19406))
+
 # [0.2.0-develop.2](https://git.lumeweb.com/LumeWeb/web3extension.io/compare/v0.2.0-develop.1...v0.2.0-develop.2) (2023-08-19)
 
 
