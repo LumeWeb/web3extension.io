@@ -2,6 +2,7 @@
 import '../styles/global.scss';
 import Navbar from '../components/Layout/Navbar/Navbar.jsx';
 import Footer from '../components/Layout/Footer/Footer.astro';
+import opengraph from "/src/assets/opengraph.png";
 
 export interface Props {
     view: string;
@@ -9,6 +10,9 @@ export interface Props {
 }
 
 const {view, title} = Astro.props;
+const description =
+    "Access the open, user-owned web with Lume Web, and make it yours.";
+const url = "https://web3extension.io";
 ---
 
 <!DOCTYPE html>
@@ -17,10 +21,24 @@ const {view, title} = Astro.props;
     <title>{title}</title>
     <meta
         name="description"
-        content="Access the open, user-owned web with Lume Web, and make it yours"
+        content={description}
     />
     <meta name="keywords"
           content="Web3 Extension, web3 browser, Lume Web, Web3, dWeb, p2p, handshake, eth, ethereum, ipfs, open web, privacy, decentralization, blockchain"/>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={url} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={opengraph.src} />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={url} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={opengraph.src} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
     <!-- Matomo -->
     <script>
         var _paq = window._paq = window._paq || [];
